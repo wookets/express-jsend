@@ -1,6 +1,6 @@
 {   
   "name": "express-jsend", 
-  "version": "0.0.1", 
+  "version": "0.1.0", 
   "description": "Add jsend and jerror to express response object", 
   "keywords": ["express", "jsend"], 
   "author": "Wookets <wookets@gmail.com>", 

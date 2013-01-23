@@ -21,7 +21,7 @@
     
       res.jerror(new Error("My custom error"));
       // sends -> {"status": "error", code: "Error", message: "My custom error"}
-    
+    }
 
 ## License
 

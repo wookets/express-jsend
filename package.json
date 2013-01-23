@@ -6,7 +6,7 @@
   "author": "Wookets <wookets@gmail.com>", 
   "devDependencies": {
     "express": "3.x", 
-    "mocha": "*",
+    "mocha": "*"
   }, 
   "main": "index"
 }

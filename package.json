@@ -1,6 +1,6 @@
 {   
   "name": "express-jsend", 
-  "version": "0.1.0", 
+  "version": "0.1.1", 
   "description": "Add jsend and jerror to express response object", 
   "keywords": ["express", "jsend"], 
   "author": "Wookets <wookets@gmail.com>", 
@@ -8,5 +8,6 @@
     "express": "3.x", 
     "mocha": "*"
   }, 
-  "main": "index"
+  "main": "index",
+  "repository": "http://github.com/wookets/express-jsend.git"
 }

@@ -1,27 +1,41 @@
-# express-jsend
 
-  Adds jsend() and jerror() to the express.response object.
+Adds jsend() and jfail() and jerror() to the express.response object.
 
-## Installation
+http://labs.omniti.com/labs/jsend
 
-    $ npm install express-jsend
+## Install
 
-## Usage
+In package.json, under dependencies, you can do...
 
-    // in your app.js or server.js 
-    require('express-jsend')
-    
-    // then in your route 
-    function(res, req, next) {
-      res.jsend({...data object...});
-      // sends -> {"status": "success", data: {... data object...}} 
-    
-      res.jerror('InvalidParameter', 'The name field is required.');
-      // sends -> {"status": "error", code: "InvalidParameter", message: "The name field is required."}
-    
-      res.jerror(new Error("My custom error"));
-      // sends -> {"status": "error", code: "Error", message: "My custom error"}
-    }
+```"emailer": "https://github.com/wookets/node-emailer/0.1.1"```
+
+## Use
+
+```
+// require after you require express
+require('express-jsend');
+
+// in your route
+function(res, req, next) {
+  res.jsend({...data object...});
+  // sends -> {"status": "success", data: {... data object...}}
+
+  res.jfail({... data object...});
+  // sends -> {"status": "fail", data: {... data object...}}
+
+  res.jfail('InvalidParameter', 'The name field is required.');
+  // sends -> {"status": "fail", code: "InvalidParameter", message: "The name field is required."}
+
+  res.jfail(new Error("My custom error"));
+  // sends -> {"status": "fail", code: "Error", message: "My custom error"}
+
+  res.jerror('InvalidParameter', 'The name field is required.');
+  // sends -> {"status": "error", code: "InvalidParameter", message: "The name field is required."}
+
+  res.jerror(new Error("My custom error"));
+  // sends -> {"status": "error", code: "Error", message: "My custom error"}
+}
+```
 
 ## License
 

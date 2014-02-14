@@ -1,13 +1,17 @@
-{   
-  "name": "express-jsend", 
-  "version": "0.1.1", 
-  "description": "Add jsend and jerror to express response object", 
-  "keywords": ["express", "jsend"], 
-  "author": "Wookets <wookets@gmail.com>", 
+{
+  "name": "express-jsend",
+  "version": "0.2.0",
+  "main": "./index",
+  "author": "wookets <wookets@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/wookets/express-jsend.git"
+  },
+  "engines": {
+    "node": ">= 0.10.x"
+  },
+  "dependencies": {
+  },
   "devDependencies": {
-    "express": "3.x", 
-    "mocha": "*"
-  }, 
-  "main": "index",
-  "repository": "http://github.com/wookets/express-jsend.git"
+  }
 }

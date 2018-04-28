@@ -5,6 +5,8 @@ http://labs.omniti.com/labs/jsend
 
 ## Install
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/wookets/express-jsend.svg)](https://greenkeeper.io/)
+
 In package.json, under dependencies, you can do...
 
 ```"emailer": "https://github.com/wookets/node-emailer/0.1.1"```

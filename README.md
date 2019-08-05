@@ -11,7 +11,7 @@ In package.json, under dependencies, you can do...
 
 ## Use
 
-```
+```js
 // require after you require express
 require('express-jsend');
 
